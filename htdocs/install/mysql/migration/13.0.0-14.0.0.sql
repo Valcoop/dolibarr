@@ -119,3 +119,4 @@ ALTER TABLE llx_societe CHANGE fk_entrepot fk_warehouse INTEGER DEFAULT NULL;
 --ALTER TABLE llx_societe ADD CONSTRAINT fk_propal_fk_warehouse FOREIGN KEY (fk_warehouse) REFERENCES llx_entrepot(rowid);
 ALTER TABLE llx_societe ADD INDEX idx_societe_warehouse(fk_warehouse);
 
+ALTER TABLE `llx_mailing` CHANGE `titre` `title` varchar(128);

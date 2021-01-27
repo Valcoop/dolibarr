@@ -153,7 +153,7 @@ print '</div><div class="fichetwothirdright"><div class="ficheaddleft">';
  * List of last emailings
  */
 $limit = 10;
-$sql  = "SELECT m.rowid, m.titre, m.nbemail, m.statut, m.date_creat";
+$sql  = "SELECT m.rowid, m.title, m.nbemail, m.statut, m.date_creat";
 $sql .= " FROM ".MAIN_DB_PREFIX."mailing as m";
 $sql .= " WHERE m.entity = ".$conf->entity;
 $sql .= " ORDER BY m.date_creat DESC";

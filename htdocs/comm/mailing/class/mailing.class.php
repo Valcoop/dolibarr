@@ -258,7 +258,7 @@ class Mailing extends CommonObject
 	public function update($user)
 	{
 		$sql = "UPDATE ".MAIN_DB_PREFIX."mailing ";
-		$sql .= " SET titre = '".$this->db->escape($this->title)."'";
+		$sql .= " SET title = '".$this->db->escape($this->title)."'";
 		$sql .= ", sujet = '".$this->db->escape($this->sujet)."'";
 		$sql .= ", body = '".$this->db->escape($this->body)."'";
 		$sql .= ", email_from = '".$this->db->escape($this->email_from)."'";
@@ -288,7 +288,7 @@ class Mailing extends CommonObject
 	{
 		global $conf;
 
-		$sql = "SELECT m.rowid, m.titre as title, m.sujet, m.body, m.bgcolor, m.bgimage";
+		$sql = "SELECT m.rowid, m.title as title, m.sujet, m.body, m.bgcolor, m.bgimage";
 		$sql .= ", m.email_from, m.email_replyto, m.email_errorsto";
 		$sql .= ", m.statut, m.nbemail";
 		$sql .= ", m.fk_user_creat, m.fk_user_valid";
